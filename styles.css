@@ -11,38 +11,30 @@ button {
   all: unset;
   cursor: pointer;
 }
-
+h1{
+    color: #0000;
+}
 :root {
-  --dk-violet: hsl(268, 75%, 9%);
-  --lt-violet: hsl(268, 47%, 21%);
-  --lt-violet2: hsl(281, 89%, 26%);
-  --vb-violet: hsl(285, 91%, 52%);
-  --vb-violet2: hsl(290, 70%, 36%);
+  --dk-violet: #5CD2E6;
+  --lt-violet: #64CCC5;
+  --lt-violet2: #EF9595;
+  --vb-violet: #EF9595;
+  --vb-violet2: #0000;
 
-  --vb-yellow: hsl(52, 100%, 62%);
+  --vb-yellow: hsl(0, 0%, 4%);
 
-  --pl-white: hsl(0, 0%, 100%);
+  --pl-white: hsl(0, 8%, 3%);
 
   --vb-cyan: hsl(176, 100%, 44%);
   --vb-cyan2: hsl(177, 92%, 70%);
 
-  --dk-text: hsl(198, 20%, 13%);
+  --dk-text: #BEADFA;
 }
 
 #wrapper {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(
-    231deg,
-    rgba(22, 6, 40, 1) 0%,
-    rgba(52, 28, 79, 1) 50%,
-    rgba(88, 7, 125, 1) 100%
-  );
-  /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-
+  background: #FF9B9B;
   display: grid;
   place-items: center;
   overflow: hidden auto;
@@ -106,6 +98,10 @@ button {
   right: 1.5rem;
 }
 
+title{
+    color: #525FE1
+}
+
 /* Display Container End */
 
 /* Input Container Start  */
@@ -123,10 +119,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #0000;
 }
 
 .lengthContainer p:nth-child(1) {
   color: var(--pl-white);
+  /* text-emphasis-color: #; */
   font-size: 1.5rem;
 }
 
@@ -184,11 +182,13 @@ button {
   display: flex;
   align-items: center;
   gap: 0 1rem;
+  /* border: 1px;
+  border-color: #0000; */
 }
 
 .check label {
   text-transform: capitalize;
-  color: var(--pl-white);
+  color: var(#0000);
   font-size: 1.25rem;
   letter-spacing: 0.75px;
 }
@@ -197,25 +197,32 @@ button {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid var(--vb-cyan);
+  border: 1px solid var(#0000);
   cursor: pointer;
   position: relative;
   border-radius: 0.35rem;
+  /* font-weight: bold; */
 }
 
 .check input:checked {
-  background-color: var(--vb-cyan);
+  background-color: var(#0000);
+  /* border-color: #0000; */
 }
 
 .check input:checked::before {
   position: absolute;
   content: "✔";
-  color: var(--dk-text);
+  color: var(#0000);
   font-size: 1.05rem;
   font-weight: 600;
   left: 50%;
   transform: translateX(-50%);
   top: -3.5px;
+  /* border: 1px; */
+  /* border-color: #0000; */
+}
+.check input[type="checkbox"] {
+  border: 2px solid #000; /* You can customize the color as needed */
 }
 
 /* Checkboxes End */
@@ -231,8 +238,9 @@ button {
 }
 
 .strengthContainer p {
-  color: var(--pl-white);
+  color: var(#0000);
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .indicator {
